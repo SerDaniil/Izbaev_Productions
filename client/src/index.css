@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins";
+  margin: 0; /* Убираем отступы */
+  /* Отключаем скролл */
+  /* overflow: hidden; */
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
