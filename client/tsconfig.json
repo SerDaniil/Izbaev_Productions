@@ -1,18 +1,24 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "sourceMap": true,
     "noImplicitAny": true,
-    "module": "ESNext",
+    "module": "es6",
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "baseUrl": "src",
+    "typeRoots": ["./node_modules/@types"],
+    "resolveJsonModule": true
   },
   "ts-node": {
     "compilerOptions": {
-        "module": "CommonJS"
+      "module": "CommonJS"
     }
-  }
+  },
+  "exclude": ["node_modules", "src/**/*.png"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.json", "src/index.tsx"]
 }

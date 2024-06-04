@@ -7,8 +7,9 @@ export default function Header(): JSX.Element {
   return (
     <>
       <header className="header">
-        <h1 className="header__title">Заголовок</h1>
+        <p>NAI|IZBAEV</p>
       </header>
+
       <Outlet />
     </>
   );
