@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Route, Routes } from "react-router";
 import Header from "./Header";
 import { useAppDispatch } from "../store/store";
-import MainPage from "../feature/manePage/ManePage";
+import Home from "../feature/home/Home";
 
 function App(): JSX.Element {
   const dispatch = useAppDispatch();
@@ -12,7 +12,7 @@ function App(): JSX.Element {
   return (
     <Routes>
       <Route element={<Header />}>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/" element={<Home />} />
       </Route>
     </Routes>
   );
